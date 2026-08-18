@@ -1,0 +1,9 @@
+# Build artifacts are uploaded to GitHub Releases by publish.js, never committed.
+# Release assets live outside git, so this repo stays small forever.
+*.exe
+*.exe.blockmap
+latest.yml
+/publish.js
+/package.json
+/info.txt
+

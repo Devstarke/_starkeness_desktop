@@ -1,1 +1,0 @@
-Release builds for Starkeness Desktop version are stored here.
