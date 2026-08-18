@@ -1,7 +1,6 @@
 # Starkeness Desktop — builds
 
-Public download and update feed for the Starkeness desktop app. The source lives in the
-private `_starkenessDESKTOPWRAPPER` repo; only built artifacts land here.
+Public download and update feed for the Starkeness desktop app.
 
 ## Code signing
 
