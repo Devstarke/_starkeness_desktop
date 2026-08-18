@@ -82,7 +82,11 @@ works in a fresh clone without `npm install`.
 
 ### Checks it runs before uploading
 
-- **all three artifacts present**, with the exact filenames the version implies
+- **all three artifacts present** — `latest.yml`, `Starkeness-Setup.exe` and its `.blockmap`.
+  The installer filename is deliberately version-less, so that
+  `releases/latest/download/Starkeness-Setup.exe` is a permanent download URL the website can
+  hard-code. The version is carried by `latest.yml` and the release tag, which is all
+  electron-updater reads — it never parses the filename.
 - **the staged version matches the wrapper's `package.json`** — catches bumping the version
   and forgetting to rebuild, which would otherwise publish the previous build
 - **the installer is newer than everything that goes into it** (`src/`, `build/`,
